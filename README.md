@@ -31,4 +31,4 @@ If you use the PathVG dataset, code, or results in your research, please cite ou
                  pages = { 454 -- 463 },
               }
 
-For questions or issues, please open an issue or contact the corresponding author at: [your-email@example.com]
+For questions or issues, please open an issue or contact the corresponding author at: [hetang@hust.edu.cn]
