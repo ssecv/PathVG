@@ -1,6 +1,36 @@
-(MICCAI 2025) PathVG: A New Benchmark and Dataset for Pathology Visual Grounding
-This repository hosts the code, dataset, and pre-trained weights of the research presented in "PathVG: A New Benchmark and Dataset for Pathology Visual Grounding" (accepted by MICCAI 2025). It provides a comprehensive benchmark for pathology visual grounding tasks, along with reproducible experiments and model implementations.
+<h1 align="center">PathVG: A New Benchmark and Dataset for Pathology Visual Grounding</h1>
 
+<div align='center'>
+    <a href='' target='_blank'><strong>Chunlin Zhong</strong></a><sup> 1⋆</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Shuang Hao</strong></a><sup> 1⋆</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Junhua Wu</strong></a><sup> 2⋆</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Xiaona Chang</strong></a><sup> 2⋆</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Jiwei Jiang</strong></a><sup> 1</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Xiu Nie</strong></a><sup> 2✉</sup>,&thinsp;
+    <a href='' target='_blank'><strong>He Tang</strong></a><sup> 1✉</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Xiang Bai</strong></a><sup> 1</sup>
+</div>
+
+<div align='center'>
+    <sup>1 </sup>School of Software Engineering,
+    Huazhong University of Science and Technology,
+    Wuhan 430074, China&ensp;<br>
+    <sup>2 </sup>Department of Pathology, Union Hospital,
+    Tongji Medical College, Huazhong University of Science and Technology,
+    Wuhan 430022, China
+</div>
+
+<div align="center" style="display: flex; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
+  <a href='https://link.springer.com/chapter/10.1007/978-3-032-05169-1_44'><img src='https://img.shields.io/badge/Springer-Paper-red'></a>&ensp;
+  <a href='https://huggingface.co/datasets/fengluo/RefPath'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HF-Dataset-blue'></a>&ensp;
+  <a href='LICENSE'><img src='https://img.shields.io/badge/License-CC--BY--NC--SA%204.0-yellow'></a>&ensp;
+</div>
+
+This repo is the official implementation of "[**PathVG: A New Benchmark and Dataset for Pathology Visual Grounding**](https://arxiv.org/abs/2502.20869)" (___MICCAI 2025___).
+
+We introduce **RefPath**, a large-scale pathology visual grounding dataset containing 27,610 pathology images with 33,500 expert-verified language-grounded bounding boxes.
+
+**Contact:** clzhong@hust.edu.cn; hetang@hust.edu.cn
 ## 📅 Updates (Timeline & To-Do)
 Track key project milestones and resource releases below. Click the links to access corresponding resources once available:  
 - [x] **2025-06-25**: Repository initialization (basic structure & README released)  
