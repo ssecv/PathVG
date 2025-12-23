@@ -36,8 +36,8 @@ We introduce **RefPath**, a large-scale pathology visual grounding dataset conta
 Track key project milestones and resource releases below. Click the links to access corresponding resources once available:  
 - [x] **2025-06-25**: Repository initialization (basic structure & README released)  
 - [x] **2025-09-30**: PathVG Dataset public release → [Download Dataset](https://huggingface.co/datasets/fengluo/RefPath)   
-- [x] **2025-12**: Full training/test code public release →  (link will be activated on release date)  
-- [x] **2025-12**: Pre-trained model weights public release → [Weights Release] (link will be activated on release date)  
+- [x] **2025-12**: Full training/test code public release
+- [x] **2025-12**: Pre-trained model weights public release → **[Weights Release](https://drive.google.com/file/d/19wpL-s1JfbnUTA1gHlELb96bU4WraHGd/view?usp=drive_link)** 
 
 🔧 Environment Setup
 Prerequisites
@@ -102,7 +102,7 @@ The following is an example of model training on the RefPath dataset.
 python -m torch.distributed.launch --nproc_per_node=2 --master_port=29516 train.py --config configs/TransCP_R50_pathology2.py
 ```
 ## Eval
-
+You can download our trained weights here for testing: **[Weights Release](https://drive.google.com/file/d/19wpL-s1JfbnUTA1gHlELb96bU4WraHGd/view?usp=drive_link)** 
 ```shell
 python -m torch.distributed.launch --nproc_per_node=2 --master_port=29516 eval.py \
     --config configs/TransCP_R50_pathology2.py \
@@ -131,3 +131,5 @@ If you use the PathVG dataset, code, or results in your research, please cite ou
               }<br>
 
 For questions or issues, please open an issue or contact the corresponding author at: [hetang@hust.edu.cn]
+## Acknowledgement
+Part of our code is based on the previous works **[DETR](https://github.com/facebookresearch/detr), [TransVG](https://github.com/djiajunustc/TransVG), and [TransCP](https://github.com/WayneTomas/TransCP)**, thanks for the authors.
