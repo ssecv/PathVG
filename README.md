@@ -43,8 +43,11 @@ Track key project milestones and resource releases below. Click the links to acc
 Prerequisites
 Our PathVG model is built on [TransCP](https://github.com/WayneTomas/TransCP), Please first follow TransCP's official environment configuration guide.  
 
-## 📊 Dataset (RefPath)
+## 📸 Overview
 
+<div align="center">
+  <a href="asset/model.png" target="_blank">查看模型架构 PDF (Model Architecture)</a>
+</div>
 
 ## Install
 
