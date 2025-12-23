@@ -91,7 +91,7 @@ json2pt.py
 ```shell
 python jsonl2pth.py \
   --input_jsonl ./data/RefPath/testB.jsonl \
-  --output_pth ./data/RefPath/refpath_testB.pth \
+  --output_pth ./PathVG/split/data/pathology2/testB.pth \
   --image_base ./data/RefPath/refpath_images
 ```
 
