@@ -49,16 +49,16 @@ Our PathVG model is built on [TransCP](https://github.com/WayneTomas/TransCP), P
 
 
 ## 📝 Citation
-If you use the PathVG dataset, code, or results in your research, please cite our MICCAI 2025 paper:
-@InProceedings{ ZhoChu_PathVG_MICCAI2025,
-                 author = { Zhong, Chunlin AND Hao, Shuang AND Wu, Junhua AND Chang, Xiaona AND Jiang, Jiwei AND Nie, Xiu AND Tang, He AND Bai, Xiang },
-                 title = { { PathVG: A New Benchmark and Dataset for Pathology Visual Grounding } }, 
-                 booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025},
-                 year = {2025},
-                 publisher = {Springer Nature Switzerland},
-                 volume = { LNCS 15972 },
-                 month = {October},
-                 pages = { 454 -- 463 },
-              }
+If you use the PathVG dataset, code, or results in your research, please cite our MICCAI 2025 paper:<br>
+@InProceedings{ ZhoChu_PathVG_MICCAI2025,<br>
+                 author = { Zhong, Chunlin AND Hao, Shuang AND Wu, Junhua AND Chang, Xiaona AND Jiang, Jiwei AND Nie, Xiu AND Tang, He AND Bai, Xiang },<br>
+                 title = { { PathVG: A New Benchmark and Dataset for Pathology Visual Grounding } }, <br>
+                 booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025},<br>
+                 year = {2025},<br>
+                 publisher = {Springer Nature Switzerland},<br>
+                 volume = { LNCS 15972 },<br>
+                 month = {October},<br>
+                 pages = { 454 -- 463 },<br>
+              }<br>
 
 For questions or issues, please open an issue or contact the corresponding author at: [hetang@hust.edu.cn]
