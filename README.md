@@ -31,12 +31,13 @@ This repo is the official implementation of "[**PathVG: A New Benchmark and Data
 We introduce **RefPath**, a large-scale pathology visual grounding dataset containing 27,610 pathology images with 33,500 expert-verified language-grounded bounding boxes.
 
 **Contact:** clzhong@hust.edu.cn; hetang@hust.edu.cn
+
 ## 📅 Updates (Timeline & To-Do)
 Track key project milestones and resource releases below. Click the links to access corresponding resources once available:  
 - [x] **2025-06-25**: Repository initialization (basic structure & README released)  
 - [x] **2025-09-30**: PathVG Dataset public release → [Download Dataset](https://huggingface.co/datasets/fengluo/RefPath)   
-- [ ] **2025-10**: Full training/test code public release →  (link will be activated on release date)  
-- [ ] **2025-10**: Pre-trained model weights public release → [Weights Release] (link will be activated on release date)  
+- [x] **2025-12**: Full training/test code public release →  (link will be activated on release date)  
+- [x] **2025-12**: Pre-trained model weights public release → [Weights Release] (link will be activated on release date)  
 
 🔧 Environment Setup
 Prerequisites
@@ -45,6 +46,40 @@ Our PathVG model is built on [TransCP](https://github.com/WayneTomas/TransCP), P
 ## 📊 Dataset (RefPath)
 
 
+## Install
+
+```shell
+git clone https://github.com/WayneTomas/TransCP.git
+conda create -n pytorch1.7 python=3.6.13
+conda activate pytorch1.7
+pip install -r requirements.txt
+```
+## 📊 Dataset (RefPath)
+
+## Checkpoint
+[checkpoints](https://drive.google.com/drive/folders/1Q6C7oHWqRs99kWMJpm7J8Rh-Io0U2p3p?usp=drive_link)
+
+The original results reported in the paper are from the model trained on 2 GTX 3090;
+
+## Train
+
+The following is an example of model training on the RefPath dataset.
+```shell
+python -m torch.distributed.launch --nproc_per_node=2 --master_port=29516 train.py --config configs/TransCP_R50_pathology2.py
+```
+## Eval
+
+```shell
+python -m torch.distributed.launch --nproc_per_node=2 --master_port=29516 eval.py \
+    --config configs/TransCP_R50_pathology2.py \
+    --test_split testB \
+    --resume /path/to/your/checkpoint.pth
+```
+### Parameter Notes
+- `--test_split`: Specifies the dataset split for evaluation. `testA` corresponds to 40X magnification pathology images, `testB` corresponds to 20X magnification pathology images, and `val` includes all test images for comprehensive evaluation.
+- `--resume`: Path to the pre-trained model checkpoint (`.pth` file). This parameter is mandatory to load the trained model weights for inference.
+- `--nproc_per_node`: Number of GPUs used for distributed evaluation (set to `2` in the example, adjust based on available GPUs).
+- `--master_port`: Port for distributed communication (avoid port conflicts by changing to an unused port like `29517` if needed).
 
 
 
