@@ -46,7 +46,8 @@ Our PathVG model is built on [TransCP](https://github.com/WayneTomas/TransCP), P
 ## 📸 Overview
 
 <div align="center">
-  <a href="asset/model.png" target="_blank">查看模型架构 PDF (Model Architecture)</a>
+  <!-- 替换为转换后的图片文件 -->
+  <img src="asset/model.png" alt="Model Architecture (PKNet Baseline)" width="80%"/>
 </div>
 
 ## Install
@@ -57,12 +58,42 @@ conda create -n pytorch1.7 python=3.6.13
 conda activate pytorch1.7
 pip install -r requirements.txt
 ```
-## 📊 Dataset (RefPath)
+## 📊 Dataset Preparation (RefPath)
 
-## Checkpoint
-[checkpoints](https://drive.google.com/drive/folders/1Q6C7oHWqRs99kWMJpm7J8Rh-Io0U2p3p?usp=drive_link)
+The **RefPath** dataset is publicly available on Hugging Face:  
+<a href="https://huggingface.co/datasets/fengluo/RefPath"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HF-RefPath_Dataset-blue?style=for-the-badge"/></a>
 
-The original results reported in the paper are from the model trained on 2 GTX 3090;
+### Step 1: Download the dataset
+
+The dataset consists of:
+- `train.jsonl`, `testA.jsonl`, `testB.jsonl` annotation files
+- Corresponding pathology images (provided as parquet files or individual images depending on the split)
+- 
+### Step 2: Organize the downloaded files
+After downloading, we recommend organizing the data as follows:
+```plaintext
+RefPath/
+├── train.jsonl
+├── validation.jsonl
+├── test.jsonl
+└── images/                 # Extracted images from parquet files or directly downloaded
+    ├── xxx.jpg
+    ├── yyy.jpg
+    └── ...
+```
+
+### Step 3: Convert to training format
+The training and evaluation code requires pre-processed data files (.pth format) for efficient loading.
+We have provided conversion scripts in the repository:
+
+json2pt.py
+
+```shell
+python jsonl2pth.py \
+  --input_jsonl ./data/RefPath/testB.jsonl \
+  --output_pth ./data/RefPath/refpath_testB.pth \
+  --image_base ./data/RefPath/refpath_images
+```
 
 ## Train
 
