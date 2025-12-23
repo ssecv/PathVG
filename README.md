@@ -4,7 +4,7 @@
     <a href='' target='_blank'><strong>Chunlin Zhong</strong></a><sup> 1⋆</sup>,&thinsp;
     <a href='' target='_blank'><strong>Shuang Hao</strong></a><sup> 1⋆</sup>,&thinsp;
     <a href='' target='_blank'><strong>Junhua Wu</strong></a><sup> 2⋆</sup>,&thinsp;
-    <a href='' target='_blank'><strong>Xiaona Chang</strong></a><sup> 2⋆</sup>,&thinsp;
+    <a href='' target='_blank'><strong>Xiaona Chang</strong></a><sup> 2⋆</sup>,&thinsp;<br>
     <a href='' target='_blank'><strong>Jiwei Jiang</strong></a><sup> 1</sup>,&thinsp;
     <a href='' target='_blank'><strong>Xiu Nie</strong></a><sup> 2✉</sup>,&thinsp;
     <a href='' target='_blank'><strong>He Tang</strong></a><sup> 1✉</sup>,&thinsp;
@@ -26,7 +26,7 @@
   <a href='LICENSE'><img src='https://img.shields.io/badge/License-CC--BY--NC--SA%204.0-yellow'></a>&ensp;
 </div>
 
-This repo is the official implementation of "[**PathVG: A New Benchmark and Dataset for Pathology Visual Grounding**](https://arxiv.org/abs/2502.20869)" (___MICCAI 2025___).
+This repo is the official implementation of "[**PathVG: A New Benchmark and Dataset for Pathology Visual Grounding**](https://arxiv.org/abs/2502.20869)" (___MICCAI 2025 Spotlight___).
 
 We introduce **RefPath**, a large-scale pathology visual grounding dataset containing 27,610 pathology images with 33,500 expert-verified language-grounded bounding boxes.
 
